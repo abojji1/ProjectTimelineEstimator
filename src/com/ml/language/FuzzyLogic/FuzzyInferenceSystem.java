@@ -29,7 +29,7 @@ public class FuzzyInferenceSystem {
 
         for (FuzzyRule rule : rules) {
             if (!rule.outputVar.equals(outputVar)) continue;
-            System.out.println("Evaluating rule \n" + rule.toString());
+            System.out.println("Evaluating rule \n" + rule);
 
             // All conditions to be evaluated
             double degree = 1.0;

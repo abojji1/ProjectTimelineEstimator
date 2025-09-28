@@ -19,7 +19,7 @@ public class FuzzySet {
      * @return membership value
      */
     public double membership(double x) {
-        double dMembership = 0d;
+        double dMembership;
         if (x <= qtyA || x >= qtyC) {
             dMembership = 0.0;
         } else if (x == qtyB) {
