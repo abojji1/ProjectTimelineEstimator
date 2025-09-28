@@ -1,4 +1,4 @@
-package com.example.FuzzyLogic;
+package com.ml.language.FuzzyLogic;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ public class FuzzyInferenceSystem {
 
 
 
-    // Inference with multiple inputs
+    // Inference with multiple inputs, this can be expanded
     public double infer(Map<String, Double> inputs, String outputVar, Map<String, Double> outputCenters) {
         double numerator = 0.0;
         double denominator = 0.0;
@@ -31,7 +31,7 @@ public class FuzzyInferenceSystem {
             if (!rule.outputVar.equals(outputVar)) continue;
             System.out.println("Evaluating rule \n" + rule.toString());
 
-            // Evaluate all conditions with min (AND)
+            // All conditions to be evaluated
             double degree = 1.0;
             for (Condition cond : rule.conditions) {
 

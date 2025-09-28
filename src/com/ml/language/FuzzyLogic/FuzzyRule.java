@@ -1,4 +1,4 @@
-package com.example.FuzzyLogic;
+package com.ml.language.FuzzyLogic;
 
 import java.util.ArrayList;
 import java.util.List;

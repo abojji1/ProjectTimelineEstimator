@@ -1,4 +1,4 @@
-package com.example.FuzzyLogic;
+package com.ml.language.FuzzyLogic;
 
 import java.util.HashMap;
 import java.util.Map;

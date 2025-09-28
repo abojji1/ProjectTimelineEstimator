@@ -1,4 +1,4 @@
-package com.example.FuzzyLogic;
+package com.ml.language.FuzzyLogic;
 
 public class Condition {
 
