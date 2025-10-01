@@ -17,7 +17,7 @@ public class FuzzyInferenceSystem {
 
     /**
      * Setter for the Fuzzy Variable
-     * @param var
+     * @param var Fuzzy Variable to add
      */
     public void addVariable(FuzzyVariable var) {
         variables.put(var.name, var);
@@ -25,7 +25,7 @@ public class FuzzyInferenceSystem {
 
     /**
      * Setter for the Fuzzy Rule
-     * @param rule
+     * @param rule Fuzzy Rule to add
      */
     public void addRule(FuzzyRule rule) {
         rules.add(rule);

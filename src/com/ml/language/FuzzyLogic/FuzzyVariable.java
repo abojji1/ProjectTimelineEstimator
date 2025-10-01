@@ -22,7 +22,7 @@ public class FuzzyVariable {
 
     /**
      * Fuzzy set associated with the variable
-     * @param set
+     * @param set Fuzzy set to add
      */
     public void addFuzzySet(FuzzySet set) {
         sets.put(set.sName, set);
