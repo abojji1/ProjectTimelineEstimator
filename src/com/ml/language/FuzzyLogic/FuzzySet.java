@@ -1,10 +1,19 @@
 package com.ml.language.FuzzyLogic;
 
-
+/**
+ * Fuzzy Set to define the name the qualities that define it
+ */
 public class FuzzySet {
     String sName;
     double qtyA, qtyB, qtyC; // three dimensions ( Low, Med, High ) , you could go higher ( LowLow, LowMed, MedMed, etc. )
 
+    /**
+     * Constructor
+     * @param name of the Fuzzy Set
+     * @param a dimension
+     * @param b dimension
+     * @param c dimension
+     */
     public FuzzySet(String name, double a, double b, double c) {
         this.sName = name;
         this.qtyA = a;
@@ -29,11 +38,6 @@ public class FuzzySet {
         } else {
             dMembership = (qtyC - x) / (qtyC - qtyB);
         }
-        System.out.println("A "+ qtyA);
-        System.out.println("B "+ qtyB);
-        System.out.println("C "+ qtyC);
-        System.out.println("X "+ x);
-        System.out.println("Membership "+ dMembership);
         return dMembership;
     }
 }
